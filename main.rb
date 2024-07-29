@@ -11,4 +11,4 @@ def add_numbers(string)
 end
 
 
-add_numbers("\\n67;-9ab4")
+#add_numbers("\\n67;-9ab4")
