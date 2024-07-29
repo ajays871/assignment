@@ -4,7 +4,7 @@ describe "It should throw exception for negative numbers" do
 
 	it "throws exception for negative numbers" do
 		input = "//npoi-98jhg87[6;8"
-		expect(add_numbers(input)).to raise_error(RuntimeError, "number -98 is negative")
+		expect{add_numbers(input)}.to raise_error(RuntimeError, "number -98 is negative")
 	end
 end
 
