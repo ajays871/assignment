@@ -5,10 +5,11 @@ def add_numbers(string)
 	numbers = string.scan(/-?\d+/)
 	sum = 0
 	numbers.each do |number|
-		throw "number #{number.to_s} is negative" if number.to_i < 0
+		raise "number #{number.to_s} is negative" if number.to_i < 0
+		sum += number.to_i
 	end
-	byebug
+	return sum
 end
 
 
-#add_numbers("\\n67;-9ab4")
+#sum = add_numbers("\\n67;9ab4")
